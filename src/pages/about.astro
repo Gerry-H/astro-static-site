@@ -1,29 +1,8 @@
 ---
-const pageTitle = "Who Am I?"
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
+<MainLayout title="WhoAm I?">
+  <p>My About Page wrapped in an Astro Layout</p>
+</MainLayout>
 
-<body>
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/hobbies">Hobbies</a>
-
-  <h1>{pageTitle}</h1>
-  <p>I am Gerry!</p>
-</body>
-
-<style>
-  body {
-    font-family: sans-serif;
-  }
-
-  a {
-    color: orange;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-  
-</style>
